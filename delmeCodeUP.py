@@ -46,11 +46,19 @@ def Most_common_favorite_fruit():
         i += 1
         f.append((fav_fruits.count(fruits[i]), fruit))
     return max(f)
-
-print(Most_common_favorite_fruit())
  
 # 3i. Least most common favorite fruit
+def Least_common_favorite_fruit():
+    fruits = list(set([x["favoriteFruit"] for x in d]))
+    fav_fruits = [x["favoriteFruit"] for x in d]
+    i=-1
+    f = []
+    for fruit in fruits:
+        i += 1
+        f.append((fav_fruits.count(fruits[i]), fruit))
+    return min(f)
 
+print(Least_common_favorite_fruit())
 # 3j. Total number of unread messages for all users = 210
 # greetings = [user["greeting"] for user in d]
 # numbers = sum([int(word) for str_ in greetings for word in str_.split() if word.isdigit()])
