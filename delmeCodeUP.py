@@ -60,8 +60,8 @@ def Least_common_favorite_fruit():
 
 print(Least_common_favorite_fruit())
 # 3j. Total number of unread messages for all users = 210
-# greetings = [user["greeting"] for user in d]
-# numbers = sum([int(word) for str_ in greetings for word in str_.split() if word.isdigit()])
+greetings = [user["greeting"] for user in d]
+numbers = sum([int(word) for str_ in greetings for word in str_.split() if word.isdigit()])
 
 # for str_ in greetings:
 #     for word in str_.split():
